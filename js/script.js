@@ -69,7 +69,9 @@ goal:${goalvalue}
 plan:
 message:${messagevalue}
 `;
-    const watsappUrl = `https://wa.me/${trainerPhone}?text=encodeURIComponent(watsappMessage)`;
+    `;
+    const watsappUrl = `https://wa.me/${trainerPhone}?text=${encodeURIComponent(watsappMessage)}`;
+
     forMessage.textContent = `the order is done`;
     forMessage.classList.add("ssss");
     window.open(watsappUrl, "_blank")
